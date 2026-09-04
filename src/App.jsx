@@ -5,14 +5,14 @@ const imageBase = `${import.meta.env.BASE_URL}images/`;
 
 const teachers = [
   {
-    name: "Sri. Srinivasacharya Sir",
+    name: "N. Sujata Gupta Ma'am",
     role: "",
-    image: `${imageBase}srinivas sir2.jpeg`,
+    image: `${imageBase}sujata ma'am.jpeg`,
   },
   {
     name: "A Dedicated Mentor",
     role: "",
-    image: `${imageBase}srinivas sir1.jpeg`,
+    image: `${imageBase}sujata ma'am1.jpeg`,
   },
 ];
 
@@ -308,44 +308,57 @@ function App() {
         <div className="thank-grid">
 
           <article className="thank-card pink-card reveal">
-            <div className="thank-icon">📖</div>
+            <div className="thank-icon">💻</div>
+
             <span>01</span>
-            <h3>Words That Made a Difference</h3>
+
+            <h3>Learning Through Technology</h3>
+
             <p>
-              You taught us that every word has meaning and that
-              language can give us the confidence to express who we are.
+              You encouraged us to explore technology,
+              programming, and new ideas beyond textbooks
+              and become confident learners.
             </p>
           </article>
 
           <article className="thank-card blue-card reveal">
-            <div className="thank-icon">🎬</div>
+            <div className="thank-icon">🤖</div>
+
             <span>02</span>
-            <h3>Lessons Beyond Books</h3>
+
+            <h3>IoT & Smart Thinking</h3>
+
             <p>
-              Through films, stories, and conversations,
-              you turned lessons into unforgettable experiences.
+              You helped us understand how IoT and connected
+              technology can turn creative ideas into solutions
+              for real-world problems.
             </p>
           </article>
 
           <article className="thank-card gold-card reveal">
-            <div className="thank-icon">💡</div>
+            <div className="thank-icon">🚀</div>
+
             <span>03</span>
-            <h3>Learning Beyond Books</h3>
+
+            <h3>Projects That Build Confidence</h3>
+
             <p>
-              You encouraged us to think differently,
-              explore new ideas, and see the world from
-              different perspectives.
+              Every project taught us to experiment, solve
+              problems, learn from mistakes, and keep improving.
             </p>
           </article>
 
           <article className="thank-card green-card reveal">
-            <div className="thank-icon">❤️</div>
+            <div className="thank-icon">🌐</div>
+
             <span>04</span>
-            <h3>Memories That Stay</h3>
+
+            <h3>Web Development & Creativity</h3>
+
             <p>
-              The lessons may end with the semester, but the
-              knowledge, stories, and memories will stay with
-              us for years to come.
+              You inspired us to explore web development,
+              build useful applications, and combine technology
+              with creativity.
             </p>
           </article>
 
@@ -358,7 +371,9 @@ function App() {
 
         <div className="section-heading dark-heading reveal">
 
-          <span className="section-icon">🌟</span>
+          <span className="section-icon">
+            🌟
+          </span>
 
           <p>YOUR IMPACT</p>
 
@@ -371,30 +386,42 @@ function App() {
         <div className="impact-grid">
 
           <article className="impact-card reveal">
-            <strong>100%</strong>
-            <h3>Learning</h3>
+
+            <strong>💻</strong>
+
+            <h3>Technology</h3>
+
             <p>
-              Every lesson opened our minds to new words,
-              ideas, and possibilities.
+              You inspired us to explore programming,
+              web development, IoT, and modern technologies.
             </p>
+
           </article>
 
           <article className="impact-card reveal">
-            <strong>🎬∞</strong>
-            <h3>Memories</h3>
+
+            <strong>🚀</strong>
+
+            <h3>Projects</h3>
+
             <p>
-              The stories, films, and moments you shared
-              will stay with us for years to come.
+              You showed us that the best learning happens
+              when we turn ideas into projects and real solutions.
             </p>
+
           </article>
 
           <article className="impact-card reveal">
-            <strong>💡1</strong>
-            <h3>Lasting Impact</h3>
+
+            <strong>🧠</strong>
+
+            <h3>Problem Solving</h3>
+
             <p>
-              One teacher can inspire a lifetime of learning,
-              confidence, and growth.
+              Your guidance encouraged us to ask questions,
+              experiment, solve problems, and never stop learning.
             </p>
+
           </article>
 
         </div>
@@ -406,7 +433,9 @@ function App() {
 
         <div className="section-heading reveal">
 
-          <span className="section-icon">💌</span>
+          <span className="section-icon">
+            💌
+          </span>
 
           <p>WORDS FROM THE HEART</p>
 
@@ -419,44 +448,83 @@ function App() {
         <div className="tribute-grid">
 
           <article className="tribute-card tribute-pink reveal">
+
             <span className="quote-symbol">“</span>
+
             <p>
-              📖 Your lessons taught us that learning is not just
-              about books, but about discovering new ideas and
-              new ways of seeing the world.
+              📚 You taught us that learning goes beyond
+              textbooks through technology, projects,
+              experiments, and curiosity.
             </p>
-            <div className="tribute-avatar">🌸</div>
-            <strong>A Grateful Student</strong>
+
+            <div className="tribute-avatar">
+              🌸
+            </div>
+
+            <strong>
+              A Grateful Student
+            </strong>
+
           </article>
 
           <article className="tribute-card tribute-blue reveal">
+
             <span className="quote-symbol">“</span>
+
             <p>
-              🎬 Through films and stories, you made every lesson
-              more interesting, meaningful, and memorable.
+              💻 Your guidance encouraged us to explore
+              programming, web development, and turn our
+              ideas into something real.
             </p>
-            <div className="tribute-avatar">⭐</div>
-            <strong>With Gratitude</strong>
+
+            <div className="tribute-avatar">
+              ⭐
+            </div>
+
+            <strong>
+              With Gratitude
+            </strong>
+
           </article>
 
           <article className="tribute-card tribute-purple reveal">
+
             <span className="quote-symbol">“</span>
+
             <p>
-              💡 Your words encouraged us to think, learn,
-              question, and look at life from a different perspective.
+              🤖 IoT and technology became more meaningful
+              because you showed us how learning can connect
+              with real-world problems.
             </p>
-            <div className="tribute-avatar">💜</div>
-            <strong>Forever Thankful</strong>
+
+            <div className="tribute-avatar">
+              💜
+            </div>
+
+            <strong>
+              Forever Thankful
+            </strong>
+
           </article>
 
           <article className="tribute-card tribute-green reveal">
+
             <span className="quote-symbol">“</span>
+
             <p>
-              ❤️ The knowledge, stories, and memories from your
-              classes will stay with us long after the lessons are over.
+              ❤️ Beyond technical knowledge, you taught us
+              confidence, patience, creativity, and the courage
+              to keep learning.
             </p>
-            <div className="tribute-avatar">🌱</div>
-            <strong>Always Grateful</strong>
+
+            <div className="tribute-avatar">
+              🌱
+            </div>
+
+            <strong>
+              Always Grateful
+            </strong>
+
           </article>
 
         </div>
@@ -468,7 +536,9 @@ function App() {
 
         <div className="section-heading reveal">
 
-          <span className="section-icon">📸</span>
+          <span className="section-icon">
+            📸
+          </span>
 
           <p>CHERISHED MOMENTS</p>
 
@@ -483,13 +553,18 @@ function App() {
           <article className="gallery-card reveal">
 
             <img
-              src={`${imageBase}srinivas sir1.jpeg`}
-              alt="Sri. Srinivasacharya Sir"
+              src={`${imageBase}sujata ma'am1.jpeg`}
+              alt="N. Sujata Gupta Ma'am"
             />
 
             <div className="gallery-caption">
+
               <span>❤️</span>
-              <h3>A Special Memory</h3>
+
+              <h3>
+                A Special Memory
+              </h3>
+
             </div>
 
           </article>
@@ -509,14 +584,20 @@ function App() {
             WORDS TO REMEMBER
           </span>
 
-          <h2>Teacher Quotes</h2>
+          <h2>
+            Teacher Quotes
+          </h2>
 
           <div className="quote-line"></div>
 
           <blockquote>
+
             <span>“</span>
+
             {quotes[activeQuote]}
+
             <span>”</span>
+
           </blockquote>
 
           <div className="quote-dots">
@@ -524,7 +605,11 @@ function App() {
             {quotes.map((_, index) => (
               <button
                 key={index}
-                className={index === activeQuote ? "active" : ""}
+                className={
+                  index === activeQuote
+                    ? "active"
+                    : ""
+                }
                 onClick={() => setActiveQuote(index)}
                 aria-label={`Quote ${index + 1}`}
               />
@@ -541,11 +626,17 @@ function App() {
 
         <div className="section-heading reveal">
 
-          <span className="section-icon">🏆</span>
+          <span className="section-icon">
+            🏆
+          </span>
 
-          <p>WITH SINCERE APPRECIATION</p>
+          <p>
+            WITH SINCERE APPRECIATION
+          </p>
 
-          <h2>Appreciation Awards</h2>
+          <h2>
+            Appreciation Awards
+          </h2>
 
           <div className="heading-line"></div>
 
@@ -554,30 +645,66 @@ function App() {
         <div className="awards-grid">
 
           <article className="award-card award-gold reveal">
-            <div className="award-medal">🌟</div>
-            <h3>Inspiration Award</h3>
+
+            <div className="award-medal">
+              🌟
+            </div>
+
+            <h3>
+              Innovation & Inspiration Award
+            </h3>
+
             <p>
-              For inspiring us to dream bigger and believe in ourselves.
+              For encouraging us to explore new ideas,
+              technologies, and possibilities.
             </p>
-            <span>With Love & Gratitude</span>
+
+            <span>
+              With Love & Gratitude
+            </span>
+
           </article>
 
           <article className="award-card award-purple reveal">
-            <div className="award-medal">💜</div>
-            <h3>Guidance Award</h3>
+
+            <div className="award-medal">
+              💻
+            </div>
+
+            <h3>
+              Technology Mentor Award
+            </h3>
+
             <p>
-              For always guiding us toward the right path.
+              For inspiring our journey through programming,
+              web development, IoT, and technology.
             </p>
-            <span>With Love & Gratitude</span>
+
+            <span>
+              With Love & Gratitude
+            </span>
+
           </article>
 
           <article className="award-card award-blue reveal">
-            <div className="award-medal">💙</div>
-            <h3>Dedication Award</h3>
+
+            <div className="award-medal">
+              🚀
+            </div>
+
+            <h3>
+              Project Guidance Award
+            </h3>
+
             <p>
-              For your patience, commitment, and dedication to our learning.
+              For encouraging us to learn by building,
+              experimenting, solving problems, and creating.
             </p>
-            <span>With Love & Gratitude</span>
+
+            <span>
+              With Love & Gratitude
+            </span>
+
           </article>
 
         </div>
@@ -587,10 +714,21 @@ function App() {
       {/* SURPRISE */}
       <section className="surprise-section">
 
-        <div className="confetti confetti-one">✦</div>
-        <div className="confetti confetti-two">✧</div>
-        <div className="confetti confetti-three">✦</div>
-        <div className="confetti confetti-four">✧</div>
+        <div className="confetti confetti-one">
+          ✦
+        </div>
+
+        <div className="confetti confetti-two">
+          ✧
+        </div>
+
+        <div className="confetti confetti-three">
+          ✦
+        </div>
+
+        <div className="confetti confetti-four">
+          ✧
+        </div>
 
         <div className="surprise-content reveal">
 
@@ -598,7 +736,9 @@ function App() {
             🎁
           </div>
 
-          <span>ONE LITTLE SURPRISE</span>
+          <span>
+            ONE LITTLE SURPRISE
+          </span>
 
           <h2>
             A Special Message
@@ -623,17 +763,22 @@ function App() {
           {surpriseOpen && (
             <div className="surprise-message">
 
-              <div>💐 ✨ 🌸</div>
+              <div>
+                💐 ✨ 🌸
+              </div>
 
               <h3>
-                Thank You, Dear Teachers!
+                Thank You, Dear Ma'am! 💐
               </h3>
 
               <p>
-                Your kindness, guidance, patience,
-                and dedication make a difference every day.
-                We are truly grateful for everything you do.
-                ❤️
+                Your guidance helped us learn not only
+                from lessons, but also through projects,
+                technology, creativity, and real-world
+                experiences. Thank you for your guidance,
+                encouragement, patience, and for inspiring
+                us to keep learning, building, experimenting,
+                and believing in ourselves. ❤️
               </p>
 
             </div>
@@ -648,15 +793,24 @@ function App() {
       </section>
 
       {/* WRITE TRIBUTE */}
-      <section id="write-tribute" className="section write-section">
+      <section
+        id="write-tribute"
+        className="section write-section"
+      >
 
         <div className="section-heading reveal">
 
-          <span className="section-icon">✍️</span>
+          <span className="section-icon">
+            ✍️
+          </span>
 
-          <p>YOUR WORDS MATTER</p>
+          <p>
+            YOUR WORDS MATTER
+          </p>
 
-          <h2>Write a Tribute</h2>
+          <h2>
+            Write a Tribute
+          </h2>
 
           <div className="heading-line"></div>
 
@@ -791,7 +945,9 @@ function App() {
           Made with ❤️ for Teachers’ Day 2026
         </p>
 
-        <button onClick={() => scrollToSection("home")}>
+        <button
+          onClick={() => scrollToSection("home")}
+        >
           Back to Top ↑
         </button>
 
