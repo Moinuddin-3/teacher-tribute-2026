@@ -5,14 +5,14 @@ const imageBase = `${import.meta.env.BASE_URL}images/`;
 
 const teachers = [
   {
-    name: "N. Sujata Gupta Ma'am",
+    name: "Sri. Srinivasacharya Sir",
     role: "",
-    image: `${imageBase}sujata ma'am.jpeg`,
+    image: `${imageBase}srinivas sir2.jpeg`,
   },
   {
-    name: "A Dedicated Mentor",
+    name: "Sri. Srinivasacharya Sir",
     role: "",
-    image: `${imageBase}sujata ma'am1.jpeg`,
+    image: `${imageBase}srinivas sir1.jpeg`,
   },
 ];
 
@@ -120,6 +120,7 @@ function App() {
           </button>
 
           <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+
             <button onClick={() => scrollToSection("home")}>
               Home
             </button>
@@ -147,6 +148,7 @@ function App() {
             <button onClick={() => scrollToSection("write-tribute")}>
               Tribute
             </button>
+
           </nav>
 
           <button
@@ -230,17 +232,17 @@ function App() {
         <div className="section-heading reveal">
 
           <span className="section-icon">
-            👩‍🏫
+            👨‍🏫
           </span>
 
-          <p>OUR WONDERFUL MENTORS</p>
+          <p>OUR WONDERFUL MENTOR</p>
 
-          <h2>Meet Our Teachers</h2>
+          <h2>Meet Our Teacher</h2>
 
           <div className="heading-line"></div>
 
           <span>
-            The people who make learning meaningful.
+            The person who makes learning meaningful.
           </span>
 
         </div>
@@ -250,7 +252,7 @@ function App() {
           {teachers.map((teacher, index) => (
             <article
               className={`teacher-card teacher-${index + 1} reveal`}
-              key={teacher.name}
+              key={`${teacher.name}-${index}`}
             >
 
               <div
@@ -299,7 +301,7 @@ function App() {
 
           <p>FROM OUR HEARTS</p>
 
-          <h2>Thank You, Teachers</h2>
+          <h2>A Tribute to Our English Sir</h2>
 
           <div className="heading-line"></div>
 
@@ -308,58 +310,79 @@ function App() {
         <div className="thank-grid">
 
           <article className="thank-card pink-card reveal">
-            <div className="thank-icon">💻</div>
+
+            <div className="thank-icon">
+              📖
+            </div>
 
             <span>01</span>
 
-            <h3>Learning Through Technology</h3>
+            <h3>
+              Words That Made a Difference
+            </h3>
 
             <p>
-              You encouraged us to explore technology,
-              programming, and new ideas beyond textbooks
-              and become confident learners.
+              You taught us that every word has meaning
+              and gave us the confidence to express ourselves.
             </p>
+
           </article>
 
           <article className="thank-card blue-card reveal">
-            <div className="thank-icon">🤖</div>
+
+            <div className="thank-icon">
+              🎬
+            </div>
 
             <span>02</span>
 
-            <h3>IoT & Smart Thinking</h3>
+            <h3>
+              Lessons Beyond the Classroom
+            </h3>
 
             <p>
-              You helped us understand how IoT and connected
-              technology can turn creative ideas into solutions
-              for real-world problems.
+              Through films, stories, and conversations,
+              you turned lessons into unforgettable experiences.
             </p>
+
           </article>
 
           <article className="thank-card gold-card reveal">
-            <div className="thank-icon">🚀</div>
+
+            <div className="thank-icon">
+              💡
+            </div>
 
             <span>03</span>
 
-            <h3>Projects That Build Confidence</h3>
+            <h3>
+              Learning Beyond Books
+            </h3>
 
             <p>
-              Every project taught us to experiment, solve
-              problems, learn from mistakes, and keep improving.
+              You encouraged us to think differently,
+              explore new ideas, and see the world differently.
             </p>
+
           </article>
 
           <article className="thank-card green-card reveal">
-            <div className="thank-icon">🌐</div>
+
+            <div className="thank-icon">
+              ❤️
+            </div>
 
             <span>04</span>
 
-            <h3>Web Development & Creativity</h3>
+            <h3>
+              Memories That Stay
+            </h3>
 
             <p>
-              You inspired us to explore web development,
-              build useful applications, and combine technology
-              with creativity.
+              The lessons may end, but the knowledge,
+              stories, and memories will stay with us for years.
             </p>
+
           </article>
 
         </div>
@@ -387,26 +410,26 @@ function App() {
 
           <article className="impact-card reveal">
 
-            <strong>💻</strong>
+            <strong>📖</strong>
 
-            <h3>Technology</h3>
+            <h3>English</h3>
 
             <p>
-              You inspired us to explore programming,
-              web development, IoT, and modern technologies.
+              You inspired us to improve our English,
+              communication, vocabulary, and confidence.
             </p>
 
           </article>
 
           <article className="impact-card reveal">
 
-            <strong>🚀</strong>
+            <strong>🎬</strong>
 
-            <h3>Projects</h3>
+            <h3>Films & Stories</h3>
 
             <p>
-              You showed us that the best learning happens
-              when we turn ideas into projects and real solutions.
+              You showed us how films and stories can
+              make learning creative, meaningful, and memorable.
             </p>
 
           </article>
@@ -415,11 +438,11 @@ function App() {
 
             <strong>🧠</strong>
 
-            <h3>Problem Solving</h3>
+            <h3>Knowledge</h3>
 
             <p>
-              Your guidance encouraged us to ask questions,
-              experiment, solve problems, and never stop learning.
+              Your lessons encouraged us to think,
+              explore new ideas, and never stop learning.
             </p>
 
           </article>
@@ -452,9 +475,9 @@ function App() {
             <span className="quote-symbol">“</span>
 
             <p>
-              📚 You taught us that learning goes beyond
-              textbooks through technology, projects,
-              experiments, and curiosity.
+              📖 You taught us that learning goes beyond
+              textbooks through English, stories, films,
+              curiosity, and meaningful conversations.
             </p>
 
             <div className="tribute-avatar">
@@ -472,9 +495,9 @@ function App() {
             <span className="quote-symbol">“</span>
 
             <p>
-              💻 Your guidance encouraged us to explore
-              programming, web development, and turn our
-              ideas into something real.
+              🎬 Your lessons through films and stories
+              made learning interesting and gave us
+              memories we will always remember.
             </p>
 
             <div className="tribute-avatar">
@@ -492,9 +515,9 @@ function App() {
             <span className="quote-symbol">“</span>
 
             <p>
-              🤖 IoT and technology became more meaningful
-              because you showed us how learning can connect
-              with real-world problems.
+              💡 Your knowledge encouraged us to think
+              differently, ask questions, and look at
+              ideas from new perspectives.
             </p>
 
             <div className="tribute-avatar">
@@ -512,9 +535,9 @@ function App() {
             <span className="quote-symbol">“</span>
 
             <p>
-              ❤️ Beyond technical knowledge, you taught us
-              confidence, patience, creativity, and the courage
-              to keep learning.
+              ❤️ Beyond English and lessons, you taught us
+              confidence, creativity, curiosity, and the
+              courage to keep learning.
             </p>
 
             <div className="tribute-avatar">
@@ -553,8 +576,8 @@ function App() {
           <article className="gallery-card reveal">
 
             <img
-              src={`${imageBase}sujata ma'am1.jpeg`}
-              alt="N. Sujata Gupta Ma'am"
+              src={`${imageBase}srinivas sir1.jpeg`}
+              alt="Sri. Srinivasacharya Sir"
             />
 
             <div className="gallery-caption">
@@ -668,16 +691,16 @@ function App() {
           <article className="award-card award-purple reveal">
 
             <div className="award-medal">
-              💻
+              📖
             </div>
 
             <h3>
-              Technology Mentor Award
+              English Mentor Award
             </h3>
 
             <p>
-              For inspiring our journey through programming,
-              web development, IoT, and technology.
+              For inspiring our journey through English,
+              communication, stories, and learning.
             </p>
 
             <span>
@@ -689,16 +712,16 @@ function App() {
           <article className="award-card award-blue reveal">
 
             <div className="award-medal">
-              🚀
+              🎬
             </div>
 
             <h3>
-              Project Guidance Award
+              Story & Film Inspiration Award
             </h3>
 
             <p>
-              For encouraging us to learn by building,
-              experimenting, solving problems, and creating.
+              For showing us how films and stories can
+              make learning meaningful and unforgettable.
             </p>
 
             <span>
@@ -768,17 +791,17 @@ function App() {
               </div>
 
               <h3>
-                Thank You, Dear Ma'am! 💐
+                Thank You, Dear Sir! 💐
               </h3>
 
               <p>
-                Your guidance helped us learn not only
-                from lessons, but also through projects,
-                technology, creativity, and real-world
-                experiences. Thank you for your guidance,
-                encouragement, patience, and for inspiring
-                us to keep learning, building, experimenting,
-                and believing in ourselves. ❤️
+                Your English lessons, stories, films,
+                knowledge, guidance, and encouragement
+                helped us learn in ways that go beyond
+                the classroom. Thank you for making learning
+                meaningful, inspiring our curiosity, and
+                encouraging us to keep learning and believing
+                in ourselves. ❤️
               </p>
 
             </div>
@@ -815,7 +838,7 @@ function App() {
           <div className="heading-line"></div>
 
           <span>
-            Leave a heartfelt message for a teacher.
+            Leave a heartfelt message for your teacher.
           </span>
 
         </div>
@@ -853,7 +876,8 @@ function App() {
                 id="teacher"
                 name="teacher"
                 type="text"
-                placeholder="Enter teacher's name"
+                placeholder="Sri. Srinivasacharya Sir"
+                defaultValue="Sri. Srinivasacharya Sir"
                 required
               />
 
@@ -911,7 +935,7 @@ function App() {
           <h2>
             Thank You,
             <br />
-            Teachers! ❤️
+            English Sir! ❤️
           </h2>
 
           <p>
