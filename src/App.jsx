@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+const imageBase = `${import.meta.env.BASE_URL}images/`;
+
 const teachers = [
   {
     name: "Sri. Srinivasacharya Sir",
     role: "",
-    image: "/images/srinivas sir2.jpeg",
+    image: `${imageBase}srinivas sir2.jpeg`,
   },
   {
     name: "A Dedicated Mentor",
     role: "",
-    image: "/images/srinivas sir1.jpeg",
+    image: `${imageBase}srinivas sir1.jpeg`,
   },
- 
 ];
 
 const quotes = [
@@ -33,15 +34,13 @@ function App() {
     const handleScroll = () => {
       setShowTop(window.scrollY > 500);
 
-      document
-        .querySelectorAll(".reveal")
-        .forEach((element) => {
-          const top = element.getBoundingClientRect().top;
+      document.querySelectorAll(".reveal").forEach((element) => {
+        const top = element.getBoundingClientRect().top;
 
-          if (top < window.innerHeight - 80) {
-            element.classList.add("visible");
-          }
-        });
+        if (top < window.innerHeight - 80) {
+          element.classList.add("visible");
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -179,7 +178,7 @@ function App() {
 
           <div className="hero-logo">
             <img
-              src="/images/CBIT.png"
+              src={`${imageBase}CBIT.png`}
               alt="CBIT Logo"
             />
           </div>
@@ -193,8 +192,8 @@ function App() {
           </p>
 
           <h1>
-            Happy Teachers'
-            <span>  Day 2026</span>
+            Happy Teachers’
+            <span> Day 2026</span>
           </h1>
 
           <p className="hero-description">
@@ -221,11 +220,7 @@ function App() {
 
           </div>
 
-          
-
-          </div>
-
-        
+        </div>
 
       </section>
 
@@ -262,6 +257,7 @@ function App() {
                 className="teacher-image"
                 onClick={() => setLightbox(teacher.image)}
               >
+
                 <img
                   src={teacher.image}
                   alt={teacher.name}
@@ -270,12 +266,19 @@ function App() {
                 <div className="photo-hover">
                   View Photo ✨
                 </div>
+
               </div>
 
               <div className="teacher-info">
+
                 <span>0{index + 1}</span>
+
                 <h3>{teacher.name}</h3>
-                <p>{teacher.role}</p>
+
+                {teacher.role && (
+                  <p>{teacher.role}</p>
+                )}
+
               </div>
 
             </article>
@@ -309,7 +312,8 @@ function App() {
             <span>01</span>
             <h3>Words That Made a Difference</h3>
             <p>
-             You taught us that every word has meaning and that language can give us the confidence to express who we are.
+              You taught us that every word has meaning and that
+              language can give us the confidence to express who we are.
             </p>
           </article>
 
@@ -319,7 +323,7 @@ function App() {
             <h3>Lessons Beyond Books</h3>
             <p>
               Through films, stories, and conversations,
-  you turned lessons into unforgettable experiences.
+              you turned lessons into unforgettable experiences.
             </p>
           </article>
 
@@ -328,7 +332,9 @@ function App() {
             <span>03</span>
             <h3>Learning Beyond Books</h3>
             <p>
-              You encouraged us to think differently, explore new ideas, and see the world from different perspectives.
+              You encouraged us to think differently,
+              explore new ideas, and see the world from
+              different perspectives.
             </p>
           </article>
 
@@ -337,7 +343,9 @@ function App() {
             <span>04</span>
             <h3>Memories That Stay</h3>
             <p>
-              The lessons may end with the semester, but the knowledge, stories, and memories will stay with us for years to come.
+              The lessons may end with the semester, but the
+              knowledge, stories, and memories will stay with
+              us for years to come.
             </p>
           </article>
 
@@ -366,7 +374,8 @@ function App() {
             <strong>100%</strong>
             <h3>Learning</h3>
             <p>
-              Every lesson opened our minds to new words, ideas, and possibilities.
+              Every lesson opened our minds to new words,
+              ideas, and possibilities.
             </p>
           </article>
 
@@ -374,7 +383,8 @@ function App() {
             <strong>🎬∞</strong>
             <h3>Memories</h3>
             <p>
-              The stories, films, and moments you shared will stay with us for years to come.
+              The stories, films, and moments you shared
+              will stay with us for years to come.
             </p>
           </article>
 
@@ -382,7 +392,8 @@ function App() {
             <strong>💡1</strong>
             <h3>Lasting Impact</h3>
             <p>
-              One teacher can inspire a lifetime of learning, confidence, and growth.
+              One teacher can inspire a lifetime of learning,
+              confidence, and growth.
             </p>
           </article>
 
@@ -410,8 +421,9 @@ function App() {
           <article className="tribute-card tribute-pink reveal">
             <span className="quote-symbol">“</span>
             <p>
-              📖 
-Your lessons taught us that learning is not just about books, but about discovering new ideas and new ways of seeing the world.
+              📖 Your lessons taught us that learning is not just
+              about books, but about discovering new ideas and
+              new ways of seeing the world.
             </p>
             <div className="tribute-avatar">🌸</div>
             <strong>A Grateful Student</strong>
@@ -420,8 +432,8 @@ Your lessons taught us that learning is not just about books, but about discover
           <article className="tribute-card tribute-blue reveal">
             <span className="quote-symbol">“</span>
             <p>
-              🎬 
-Through films and stories, you made every lesson more interesting, meaningful, and memorable.
+              🎬 Through films and stories, you made every lesson
+              more interesting, meaningful, and memorable.
             </p>
             <div className="tribute-avatar">⭐</div>
             <strong>With Gratitude</strong>
@@ -430,8 +442,8 @@ Through films and stories, you made every lesson more interesting, meaningful, a
           <article className="tribute-card tribute-purple reveal">
             <span className="quote-symbol">“</span>
             <p>
-              💡 
-Your words encouraged us to think, learn, question, and look at life from a different perspective.
+              💡 Your words encouraged us to think, learn,
+              question, and look at life from a different perspective.
             </p>
             <div className="tribute-avatar">💜</div>
             <strong>Forever Thankful</strong>
@@ -440,8 +452,8 @@ Your words encouraged us to think, learn, question, and look at life from a diff
           <article className="tribute-card tribute-green reveal">
             <span className="quote-symbol">“</span>
             <p>
-              ❤️ 
-The knowledge, stories, and memories from your classes will stay with us long after the lessons are over.
+              ❤️ The knowledge, stories, and memories from your
+              classes will stay with us long after the lessons are over.
             </p>
             <div className="tribute-avatar">🌱</div>
             <strong>Always Grateful</strong>
@@ -449,38 +461,47 @@ The knowledge, stories, and memories from your classes will stay with us long af
 
         </div>
 
-      </section> 
-
-      {/*Gallery*?}
+      </section>
 
       {/* GALLERY */}
-<section id="gallery" className="section gallery-section">
-  <div className="section-heading reveal">
-    <span className="section-icon">📸</span>
-    <p>CHERISHED MOMENTS</p>
-    <h2>A Beautiful Memory</h2>
-    <div className="heading-line"></div>
-  </div>
+      <section id="gallery" className="section gallery-section">
 
-  <div className="gallery-grid">
-    <article className="gallery-card reveal">
-      <img
-        src="/images/srinivas sir1.jpeg"
-        alt="Sri. Srinivasacharya Sir"
-      />
-      <div className="gallery-caption">
-        <span>❤️</span>
-        <h3>A Special Memory</h3>
-      </div>
-    </article>
-  </div>
-</section>
+        <div className="section-heading reveal">
+
+          <span className="section-icon">📸</span>
+
+          <p>CHERISHED MOMENTS</p>
+
+          <h2>A Beautiful Memory</h2>
+
+          <div className="heading-line"></div>
+
+        </div>
+
+        <div className="gallery-grid">
+
+          <article className="gallery-card reveal">
+
+            <img
+              src={`${imageBase}srinivas sir1.jpeg`}
+              alt="Sri. Srinivasacharya Sir"
+            />
+
+            <div className="gallery-caption">
+              <span>❤️</span>
+              <h3>A Special Memory</h3>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
       {/* QUOTES */}
       <section id="quotes" className="quotes-section">
 
-        <div className="quote-background-mark">
-          
-        </div>
+        <div className="quote-background-mark"></div>
 
         <div className="quote-container reveal">
 
@@ -748,7 +769,7 @@ The knowledge, stories, and memories from your classes will stay with us long af
           <div className="final-line"></div>
 
           <strong>
-            Happy Teachers' Day 2026
+            Happy Teachers’ Day 2026
           </strong>
 
         </div>
@@ -767,7 +788,7 @@ The knowledge, stories, and memories from your classes will stay with us long af
         </div>
 
         <p>
-          Made with ❤️ for Teachers' Day 2026
+          Made with ❤️ for Teachers’ Day 2026
         </p>
 
         <button onClick={() => scrollToSection("home")}>
